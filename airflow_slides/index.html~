@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Headless Drupal</title>
+
+		<meta name="description" content="Headless Drupal Workshop ">
+		<meta name="author" content="Chakrapani R, Gokul NK">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Headless Drupal</h1>
+					<h3>Drupal as a Backend</h3>
+					<p>
+ 					        <small>Presented by &nbsp;<a href="http://chakrapani.me"> Chakrapani R </a> & <a href="http://bit.ly/gokulnk"> Gokul NK </a></a></small>
+					</p>
+	<p>
+ 					        <medium><a href="http://azrisolutions.com"> AzriSolutions </a></medium>
+					</p>
+				</section>
+				<section>
+					<h2>Gokul N K</h2>
+					<ul>
+						<li>Graduated from Rashtreeya Vidyalaya (RVCE)</li>
+						<li>From Bangalore</li>
+						<li>Drupal Architect at Azri Solutions</li>
+						<li>Formerly a Java Developer @ Mindtree</li>
+						<li>Drupal since 2011</li>
+						<li>Lead Maintainer for Automatr Module</li>
+						<li>Cofounder of Aziteez</li>
+						<li>Bowling Addict</li>
+					</ul>
+					<aside class="notes">
+						 speaker notes window (hit 's' on your keyboard).
+					</aside>
+
+				</section>
+				<section>
+					<h2>Chakrapani R</h2>
+					<ul>
+						<li>Graduated from IIIT-Hyderabad</li>
+						<li>From Bangalore</li>
+						<li>Drupal architect at Azri Solutions</li>
+						<li>Drupal since 2009</li>
+						<li>Author of Zoho D7 module</li>
+						<li>Core contributor</li>
+						<li>Led a team which contribed 50+ commits to core</li>
+						<li>Drupal Bangalore</li>
+					</ul>
+					<aside class="notes">
+						 speaker notes window (hit 's' on your keyboard).
+					</aside>
+
+				</section>
+				<section>
+					<h2>Overview</h2>
+					<ul>
+					  <li class="fragment">Demystifying Headless Drupal</li>
+					  <li class="fragment">State of Headless in Drupal</li>
+					  <li class="fragment">Tools for building a Drupal Headless Site</li>
+					  <li class="fragment">Comparative Study of existing Modules</li>
+					  <li class="fragment">Let's Build a Drupal Backend</li>
+					  <li class="fragment">Installing Drupal Phonegap</li>
+					  <li class="fragment">Building our first Pohnegap App</li>
+					  <li class="fragment">A case study of a live Website</li>
+					</ul>
+				</section>
+
+
+
+				<section>
+					<h1>Thank You!</h1>
+					<h3>Chakrapani R / Gokul NK</h3>
+				</section>
+
+			</div>
+
+		</div>
+    <footer class="azri-logo logo">
+      <a href="http://www.arisolutions.com/"><img src="assets/azri-logo-white.png" alt="azri logo" /></a>
+    </footer>
+    <footer class="dcd-logo logo">
+      <a href="http://2015.drupalcampdelhi.com/"><img src="assets/dcd_logo.png" alt="dcd logo" /></a>
+    </footer>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
